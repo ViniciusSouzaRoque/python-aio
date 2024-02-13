@@ -18,6 +18,9 @@ Algumas vantagens da Simple Factory são:
 ### Meu exemplo
 No meu exemplo, eu criei uma classe abstrata Pessoa que define duas operações abstratas: tipo_de_pessoa e documento. Essas operações devem ser implementadas pelas subclasses concretas PessoaFisica e PessoaJuridica, que representam os dois tipos de pessoa possíveis. Em seguida, eu criei uma classe PessoaFactory que possui um método estático get_pessoa que recebe um parâmetro tipo e retorna uma instância de PessoaFisica ou PessoaJuridica, dependendo do valor do parâmetro. Por fim, eu usei a PessoaFactory para criar duas pessoas de tipos diferentes e chamei as operações definidas na classe Pessoa.
 
+### Meu exemplo 2
+Neste segundo exemplo, a Factory possue uma camada extra de abstração, onde o cliente não terá nenhum contato direto com a classe Pessoa implementada, somente através da própria Factory ele poderá realizar as operações.
+
 ### Quando usar?
 Você pode usar a Simple Factory quando:
 
